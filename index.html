@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117094943-1"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-117094943-1");</script>
+<title>Webルーレット</title>
+<meta name="description" content="ブラウザ上で簡単にルーレットを使ってランダムにくじ引きをすることができます。">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/konvajs/konva/2.0.2/konva.min.js"></script>
+
+<link rel="stylesheet" href="/style.css?201804062021">
+<link rel="stylesheet" href="style.css?201804062021">
+<script src="/script.js?201804062021"></script>
+<script src="script.js?201804062021"></script>
+</head>
+
+<nav class="navbar is-link is-fixed-top">
+  <div class="container">
+    <div class="navbar-brand">
+        <h1 class="navbar-item is-large title">ルーレット</h1>
+        <div class="navbar-burger"> <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span> </div>
+    </div>
+    <div id="nav" class="navbar-start navbar-menu"> <!-- Header --> </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-quarter"><button id="start" class="button is-large"><i class="fas fa-fw fa-play"></i>開始</button><textarea id="input" class="textarea"></textarea></div>
+      <div class="column"><p id="output"></div>
+      <!-- <div class="column" id="canvas"><canvas></canvas></div> -->
+    </div>
+
+    <article class="message is-dark" style="margin-top: 5rem">
+      <div class="message-body content">
+        <p>選択肢を改行で区切って入力して開始ボタンを押してください。
+        <p>* ローカル(ご使用の端末)で処理するため、サーバーに入力したデータは<strong>送信されません</strong>。
+      </div>
+    </article>
+  </div> <!-- .container -->
+</section>
+
+<footer id="footer"></footer>
