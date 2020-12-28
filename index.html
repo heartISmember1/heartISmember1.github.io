@@ -14,36 +14,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.rawgit.com/konvajs/konva/2.0.2/konva.min.js"></script>
 
-<link rel="stylesheet" href="/style.css?201804062021">
-<link rel="stylesheet" href="style.css?201804062021">
-<script src="/script.js?201804062021"></script>
-<script src="script.js?201804062021"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
+<style>
 
-<nav class="navbar is-link is-fixed-top">
-  <div class="container">
-    <div class="navbar-brand">
-        <h1 class="navbar-item is-large title">ルーレット</h1>
-        <div class="navbar-burger"> <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span> </div>
-    </div>
-    <div id="nav" class="navbar-start navbar-menu"> <!-- Header --> </div>
-  </div>
-</nav>
-
+</style>
 <section class="section">
   <div class="container">
-    <div class="columns">
-      <div class="column is-one-quarter"><button id="start" class="button is-large"><i class="fas fa-fw fa-play"></i>開始</button><textarea id="input" class="textarea"></textarea></div>
-      <div class="column"><p id="output"></div>
-      <!-- <div class="column" id="canvas"><canvas></canvas></div> -->
-    </div>
-
-    <article class="message is-dark" style="margin-top: 5rem">
-      <div class="message-body content">
-        <p>選択肢を改行で区切って入力して開始ボタンを押してください。
-        <p>* ローカル(ご使用の端末)で処理するため、サーバーに入力したデータは<strong>送信されません</strong>。
-      </div>
-    </article>
+    <div class="divtitle"><h1 class="navbar-item is-large title" >ルーレット</h1></div>
+	<div class="columns">
+		<div class="column is-one-quarter"></div><div class="column is-one-quarter"><h1 id="changeText"  class="navbar-item is-large title" style="height:100px">楽しい話</h1></div>
+	</div>
+	<div class="columns">
+		<div class="column is-one-quarter"><img class="image" id="changeImg"  src="images/安田.jpg" /></div><div class="column is-one-quarter"><textarea id="area1" class="textarea"></textarea></div>
+	</div>
+	<div class="columns">
+		<div class="column is-one-quarter"></div><div class="column is-one-quarter" ><button onclick= "changeMe()" id="start" class ="start" >START</button></div>
+	</div>
   </div> <!-- .container -->
 </section>
 
