@@ -1,7 +1,7 @@
 //20201228 TUYENTND ADD START
 function changeMe()
   {
-    document.getElementById("changeImg").src = "images/" + getRandomImage();	
+    document.getElementById("changeImg").src = "images/images/" + getRandomImage();	
 	document.getElementById("changeText").innerHTML = getRandomText();
   }
 function getRandomImage() {
