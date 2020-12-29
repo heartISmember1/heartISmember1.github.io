@@ -1,3 +1,4 @@
+//20201228 TUYENTND ADD START
 function changeMe()
   {
     document.getElementById("changeImg").src = "images/" + getRandomImage();	
@@ -13,3 +14,4 @@ function getRandomText() {
 	var res = textArea.split("\n");
 	return res[Math.floor(Math.random() * res.length)];
  }
+//20201228 TUYENTND ADD END
